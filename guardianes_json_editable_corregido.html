@@ -1,0 +1,244 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Guardianes del Corazón</title>
+<style>
+
+:root{color-scheme:dark;--gold:#edc578;--muted:#a9b6ce;--bg:#0b1224}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 10%,#253454,transparent 55%),var(--bg);color:#f5f3ee;font:16px/1.6 system-ui,sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid #56647d;background:#1d2b43;color:inherit;border-radius:12px;padding:12px 19px;transition:transform .15s,background .15s}button:hover:not(:disabled){background:#30445e;transform:translateY(-2px)}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:4px}button:disabled{opacity:.45;cursor:default}.primary{background:var(--gold);color:#1c2030;border-color:var(--gold);font-weight:750}.primary:hover:not(:disabled){background:#ffe0a4}header{max-width:1180px;margin:auto;padding:24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff18;gap:15px}.brand{font-weight:800;letter-spacing:.07em;font-size:13px}.brand span{color:var(--gold);margin-right:10px}.tools{display:flex;gap:8px}main{max-width:1180px;margin:auto;padding:32px 24px 60px}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,serif;font-size:clamp(44px,6.8vw,86px);line-height:1.05;font-weight:500;letter-spacing:-.04em;margin:20px 0}h2{font:500 clamp(30px,4vw,48px)/1.1 Georgia,serif;margin-bottom:20px}h3{font-size:20px}.muted,small{color:var(--muted)}.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:50px;align-items:center;min-height:580px}.hero p{max-width:510px}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.art{position:relative;aspect-ratio:1;display:grid;place-items:center;background:radial-gradient(circle,#e6be6c20,transparent 62%)}.ring{position:absolute;border:1px solid #edc57833;border-radius:50%;width:90%;height:90%}.ring:after{content:'';position:absolute;inset:28px;border:1px dashed #edc57840;border-radius:50%}.sigil{font-size:150px;color:#f4d493;filter:drop-shadow(0 0 35px #edc57855)}.star{position:absolute;left:calc(50% + var(--x));top:calc(50% + var(--y));font-size:27px;color:var(--gold);text-shadow:0 0 25px #edc578}.card{border:1px solid #ffffff22;border-radius:20px;background:linear-gradient(140deg,#243149b0,#121d32e8);padding:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.region{text-align:left;min-height:210px;position:relative;overflow:hidden}.region .icon{display:block;font-size:40px;margin-bottom:16px}.region strong{display:block;font-size:19px}.region small{display:block}.region.done{border-color:#85cfb0}.region.available{border-color:var(--gold)}.stats{display:flex;flex-wrap:wrap;gap:20px;padding:15px 20px;background:#ffffff08;border:1px solid #ffffff14;border-radius:15px;margin-bottom:30px;font-size:14px}.split{display:grid;grid-template-columns:1fr 1.1fr;gap:26px}.portrait{font-size:110px;text-align:center;padding:30px 0}.options{display:grid;gap:10px;margin-top:22px}.options button{text-align:left}.feedback{padding:16px;border-left:3px solid var(--gold);background:#edc57812;margin:20px 0}.bar{height:12px;background:#080f20;border-radius:10px;overflow:hidden;margin:10px 0 20px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#cb8d67,var(--gold));transition:width .3s}.narrow{max-width:720px;margin:30px auto}label{display:block;margin-bottom:12px}input,select,textarea{display:block;width:100%;background:#0c172a;border:1px solid #56647d;border-radius:10px;padding:13px;color:white;margin:8px 0 20px}footer{color:var(--muted);font-size:12px;margin-top:32px}dialog{background:#132139;color:#f5f3ee;border:1px solid #68718a;border-radius:20px;max-width:620px;padding:30px}dialog::backdrop{background:#000a}.pill{padding:5px 10px;background:#edc57815;color:var(--gold);border-radius:30px;font-size:12px}.trail{display:flex;gap:8px;margin:20px 0}.trail span{height:5px;flex:1;background:#ffffff18}.trail .lit{background:var(--gold)}@media(max-width:720px){.hero,.split{grid-template-columns:1fr}.hero{gap:0}.art{max-width:280px;width:100%;margin:auto;grid-row:1}.sigil{font-size:90px}header{padding:16px}.brand{font-size:11px}main{padding:22px 16px}.tools button{padding:8px}.stats{gap:12px}.hero h1{font-size:46px}.grid{grid-template-columns:1fr 1fr}.region{padding:16px}.region strong{font-size:16px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.region-image{display:block;width:100%;height:135px;object-fit:cover;border-radius:12px;margin:16px 0}.scene-image{display:block;width:100%;max-height:310px;object-fit:cover;border-radius:14px;margin-bottom:20px}.editor-preview{width:100%;max-height:210px;object-fit:contain;border-radius:12px;background:#0b1224}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}dialog:has(.editor-grid){width:850px;max-width:calc(100vw - 28px)}.tools{flex-wrap:wrap}#edit-status{min-height:28px;color:var(--gold)}@media(max-width:720px){header{flex-wrap:wrap}.editor-grid{grid-template-columns:1fr}.region-image{height:100px}} </style><header><div class="brand"><span>✦</span> GUARDIANES DEL CORAZÓN</div><div class="tools"><button id="customize" onclick="openEditor()">✎ Personalizar</button><button id="export-copy" onclick="exportCopy()">💾 Exportar copia (.json)</button><button id="import-copy" onclick="chooseImport()">📥 Importar copia (.json)</button><input id="import-file" type="file" accept=".json,application/json" hidden onchange="importCopy(this.files[0]);this.value=''"><button id="sound" aria-label="Activar sonido">♫ Sonido: no</button><button id="help">Cómo jugar</button></div></header><main id="app"></main><dialog id="modal"><div id="modalbody"></div><button onclick="document.querySelector('dialog').close()">Cerrar</button></dialog>
+<script id="portable-data" type="application/json">{"custom":{},"progress":null}</script>
+<script>
+const worlds=[
+{sin:'Soberbia',virtue:'Humildad',name:'Palacio del Espejo',boss:'Rex Superbia',icon:'♜',desc:'La soberbia nos lleva a creernos superiores y rechazar correcciones. La humildad permite reconocer el propio valor y aprender de otros.',quote:'¿Admitir un error? ¡Que crean que siempre tienes razón!',situations:[['Tu equipo encuentra un error en tu presentación.','Agradecer la corrección y revisar juntos.','Ocultar el error y culpar al equipo.','Escuchar una corrección te ayuda a crecer.'],['Una compañera gana el concurso.','Reconocer su esfuerzo y aprender de ella.','Decir que el jurado no sabe nada.','Reconocer los talentos ajenos no disminuye los tuyos.'],['Te felicitan por una tarea grupal.','Reconocer el aporte de todo el grupo.','Aceptar todo el mérito para ti.','La humildad hace visible el trabajo de los demás.']],steps:['Escuchar la corrección','Reconocer el error','Reparar y aprender']},
+{sin:'Avaricia',virtue:'Generosidad',name:'Minas del Oro Eterno',boss:'Avarus',icon:'◈',desc:'La avaricia es el apego excesivo a las posesiones. La generosidad ayuda a compartir responsablemente, sin comprar el afecto de nadie.',quote:'¡Guárdalo todo! Compartir te dejará sin nada.',situations:[['Tienes materiales de sobra y alguien olvidó los suyos.','Prestar lo que puedes y acordar su devolución.','Negarte solo por tener más que los demás.','Compartir responsablemente permite que todos participen.'],['Tu clase reúne útiles para otras familias.','Aportar algo útil según tus posibilidades.','Dar únicamente objetos que ya no sirven.','La generosidad atiende la necesidad real del otro.'],['Un amigo necesita ayuda con una tarea.','Explicarle lo que sabes sin exigir un premio.','Ayudar solo si te regala algo.','Ayudar libremente fortalece la amistad.']],steps:['Reconocer una necesidad','Ver qué puedo compartir','Ofrecer ayuda con respeto']},
+{sin:'Lujuria',virtue:'Castidad y respeto',name:'Jardín de las Apariencias',boss:'Speculum',icon:'❀',desc:'La lujuria separa el deseo del respeto a la dignidad de la persona. La castidad integra los afectos con el respeto, el dominio de sí y el cuidado de los límites personales.',quote:'La apariencia es lo único que importa.',situations:[['En el chat comparten una foto de alguien sin permiso.','No reenviarla y pedir que respeten su privacidad.','Difundirla para conseguir reacciones.','La privacidad y el consentimiento merecen respeto.'],['Se burlan del cuerpo de un compañero.','Frenar la burla y ofrecerle apoyo.','Sumarte para encajar con el grupo.','Nadie pierde su dignidad por su apariencia.'],['Una amistad te presiona para algo que no quieres.','Expresar tu límite y buscar apoyo si insiste.','Aceptar aunque te incomode.','Tus límites y los de los demás deben ser respetados.']],steps:['Reconocer la dignidad de la persona','Respetar sus límites','Actuar sin presionar ni difundir imágenes']},
+{sin:'Ira',virtue:'Paciencia',name:'Volcán de la Furia',boss:'Ignis',icon:'♨',desc:'Sentir enojo no es lo mismo que actuar con ira. La paciencia y la mansedumbre permiten responder con firmeza sin insultos, violencia ni venganza.',quote:'¡Devuelve el insulto! ¡Haz que se arrepienta!',situations:[['Te provocan después de perder un partido.','Respirar y responder sin insultos.','Empujar a quien te provoca.','Una pausa permite elegir cómo responder.'],['Un mensaje ofensivo aparece en el grupo.','Evitar responder en caliente y pedir respeto.','Publicar otro insulto más fuerte.','Poner límites con calma puede detener el conflicto.'],['Un compañero rompe por accidente tu material.','Explicar tu molestia y buscar una reparación.','Romper sus cosas para vengarte.','La paciencia permite pedir una reparación justa.']],steps:['Hacer una pausa','Expresar la molestia sin agredir','Buscar una solución justa']},
+{sin:'Gula',virtue:'Templanza',name:'Valle de los Excesos',boss:'Vorax',icon:'☾',desc:'La gula se refiere al exceso al comer o beber. Aquí también practicamos la templanza ante otros excesos, como el uso del celular, para cuidar el descanso y la libertad de elegir.',quote:'Una más… ¡nunca es suficiente!',situations:[['Llevas horas jugando y necesitas dormir.','Guardar la partida y respetar tu descanso.','Seguir toda la noche aunque estés agotado.','Disfrutar con límites cuida tu salud y tus responsabilidades.'],['Durante una comida miras el celular sin parar.','Apartarlo un rato para conversar.','Ignorar a todos hasta terminar de mirar las redes.','La templanza ayuda a prestar atención a lo que eliges cuidar.'],['Quieres comprar por impulso algo que no necesitas.','Esperar y revisar si realmente te hace falta.','Comprarlo inmediatamente por la emoción.','Una pausa ayuda a decidir con libertad.']],steps:['Reconocer el exceso','Elegir un límite realista','Respetar el límite y descansar']},
+{sin:'Envidia',virtue:'Caridad y gratitud',name:'Pantano de las Comparaciones',boss:'Invidia',icon:'♧',desc:'La envidia se entristece por el bien ajeno. La caridad nos invita a alegrarnos por otros; la gratitud ayuda a reconocer nuestros propios dones.',quote:'Mira lo que tiene… ¡debería ser tuyo!',situations:[['Tu amiga obtiene la nota que tú querías.','Felicitarla y revisar cómo mejorar tu estudio.','Inventar que hizo trampa.','Alegrarte por ella es compatible con querer mejorar.'],['Un compañero tiene más seguidores.','Valorar tu vida sin reducirla a números.','Publicar rumores para quitarle popularidad.','Tu valor no depende de una comparación en redes.'],['Eligen a otra persona para liderar.','Apoyar al equipo y desarrollar tus habilidades.','Sabotear su trabajo para que fracase.','Buscar el bien del equipo fortalece la caridad.']],steps:['Reconocer la comparación','Agradecer mis propios dones','Celebrar el bien del otro']},
+{sin:'Pereza',virtue:'Diligencia',name:'Torre de la Indiferencia',boss:'Acedia',icon:'⌛',desc:'La pereza evita de forma habitual el esfuerzo y los compromisos. La diligencia da pasos concretos. Descansar, enfermar o necesitar ayuda no equivale a pereza.',quote:'Déjalo para mañana. Tu esfuerzo no importa.',situations:[['Tu parte del trabajo grupal vence mañana.','Empezar por una tarea pequeña y avisar del avance.','Dejar que los demás hagan tu parte sin avisar.','Un primer paso concreto ayuda a cumplir los compromisos.'],['Prometiste colaborar en casa.','Organizar un momento para cumplir lo acordado.','Esperar a que alguien lo haga por ti.','La diligencia convierte una buena intención en acción.'],['Una tarea parece demasiado difícil.','Dividirla en pasos y pedir ayuda si la necesitas.','Abandonarla sin intentar ni pedir apoyo.','Pedir ayuda también es una forma responsable de avanzar.']],steps:['Elegir una tarea concreta','Dividirla en un primer paso posible','Empezar y revisar el avance']}
+];
+const heroes=[['Fortaleza','♜','Bloquea un error por región.'],['Sabiduría','✧','Descarta una respuesta incorrecta por región.'],['Esperanza','☀','Recupera un corazón una vez por partida.'],['Caridad','♡','Gana 5 puntos extra por decisión acertada.']];
+const KEY='guardianes-v1';
+function portableSnapshot(){try{const el=document.querySelector('#portable-data');const d=el?JSON.parse(el.textContent||'{}'):{};return d&&typeof d==='object'?d:{}}catch{return {}}}
+const PORTABLE=portableSnapshot();
+let s=null,level=0,stage=0,hp=300,shield=false,used=false,chosen=[],question=null,action='attack',sound=false;
+const app=document.querySelector('#app');const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const btn=(t,fn,cls='')=>`<button class="${cls}" onclick="${fn}">${t}</button>`;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(s))}catch{}}
+function validProgress(v){return v&&Array.isArray(v.gems)&&Number.isFinite(v.hearts)?v:null}
+function load(){try{const v=JSON.parse(localStorage.getItem(KEY));if(validProgress(v))return v}catch{}return validProgress(PORTABLE.progress)}
+function tone(){if(!sound)return;try{const c=new(window.AudioContext||window.webkitAudioContext)(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.frequency.value=660;g.gain.setValueAtTime(.04,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.25);o.start();o.stop(c.currentTime+.25);o.onended=()=>c.close()}catch{}}
+function modal(t){document.querySelector('#modalbody').innerHTML=t;document.querySelector('#modal').showModal()}
+document.querySelector('#help').onclick=()=>modal('<h2>Tu aventura</h2><p>Elige un guardián, explora los tres encuentros de cada región y disipa al jefe. Usa el ratón, el dedo o Tab y Enter.</p><p>Ordena acciones, toma decisiones y elige virtudes. Atacar cuesta 10 de energía y hace 100 de daño al acertar; una virtud cuesta 20 y hace 150. Defender recupera 30 de energía y prepara un escudo.</p><p>Los errores permiten volver a intentar. Si pierdes todos los corazones, reinicia la región. Compra un corazón con 20 monedas. Tu progreso se guarda en este navegador cuando el almacenamiento está disponible.</p>');
+document.querySelector('#sound').onclick=()=>{sound=!sound;document.querySelector('#sound').textContent='♫ Sonido: '+(sound?'sí':'no');tone()};
+function stats(){return `<div class="stats"><span>♡ ${s.hearts}/5 vidas</span><span>ϟ ${s.energy} energía</span><span>✦ ${s.points} virtud</span><span>◉ ${s.coins} monedas</span><span>◈ ${s.gems.length}/7 gemas</span><span>🧪 ${s.potions} ayudas</span><span>${esc(s.name)} · ${heroes[s.hero][0]}</span></div>`}
+function home(){app.innerHTML=`<section class="hero"><div><div class="eyebrow">RPG educativo · Una aventura de virtudes</div><h1>La luz comienza<br>en tu <em style="color:var(--gold)">corazón.</em></h1><p class="muted">BATALLA CONTRA LOS PECADOS CAPITALES</p><p>Siete enemigos. Siete virtudes. Una batalla que comienza en el corazón. Explora un reino perdido y recupera sus siete gemas.</p><div class="row">${btn('Nueva aventura →','create()','primary')}${load()?btn('Continuar','s=load();map()'):''}</div><p style="margin-top:22px"><small>7 regiones · 4 guardianes · Tu propia historia</small></p></div><div class="art" aria-hidden="true"><div class="ring"></div><div class="sigil">♜</div>${Array.from({length:7},(_,i)=>`<span class="star" style="--x:${Math.cos(i*6.28/7)*135-12}px;--y:${Math.sin(i*6.28/7)*135-20}px">◈</span>`).join('')}</div></section><footer>${btn('Créditos y propósito','credits()')}<p>Educación Religiosa · 3.º de secundaria · Sin cuentas ni datos personales.</p></footer>`}
+function credits(){modal('<h2>Aprender a elegir</h2><p>Aventura basada en el documento de referencia proporcionado por el usuario. Contenido cristiano educativo: los siete pecados capitales y la práctica de virtudes opuestas. Los combates son simbólicos; los puntos no califican la fe ni el valor de una persona.</p><p>Referencias para el aula: Catecismo 1866 y Romanos 12,21. La gratitud acompaña a la caridad; el respeto y el dominio de sí acompañan a la castidad. La templanza también se ejercita ante otros excesos.</p><p>Gráficos tipográficos y sonidos sintetizados. El alias y el compromiso se guardan únicamente en este navegador; evita datos personales.</p>')}
+function create(){app.innerHTML=`<div class="narrow"><div class="eyebrow">Antes de cruzar el portal</div><h2>Elige tu guardián</h2><label>Tu alias<input id="alias" maxlength="24" placeholder="Guardián" autocomplete="off"></label><div class="grid">${heroes.map((h,i)=>`<button class="card" onclick="start(${i})"><span style="font-size:38px;color:var(--gold)">${h[1]}</span><h3>${h[0]}</h3><small>${h[2]}</small></button>`).join('')}</div><footer>Elegir un guardián inicia una partida nueva y sustituye el progreso anterior.</footer>${btn('Volver','home()')}</div>`}
+function start(hero){s={name:document.querySelector('#alias').value.trim()||'Guardián',hero,hearts:3,energy:100,points:0,coins:0,gems:[],potions:0,hope:false,correct:0};save();map()}
+function map(){save();app.innerHTML=stats()+`<div class="row" style="justify-content:space-between"><div><div class="eyebrow">El Reino del Corazón</div><h2>Siete caminos hacia la luz</h2></div>${btn('Mis logros','achievements()')}</div><p class="muted">${s.gems.length===7?'El espejo del corazón te espera.':'Recupera las gemas para abrir el siguiente territorio.'}</p><div class="grid">${worlds.map((w,i)=>`<button class="card region ${s.gems.includes(i)?'done':i===s.gems.length?'available':''}" ${i>s.gems.length?'disabled':''} onclick="enter(${i})"><small>REGIÓN 0${i+1} · ${s.gems.includes(i)?'✓ COMPLETADA':i===s.gems.length?'DISPONIBLE':'BLOQUEADA'}</small>${regionImage(i)}<strong>${esc(regionContent(i).title)}</strong><small>${esc(regionContent(i).text)}</small></button>`).join('')}<button class="card region" ${s.gems.length<7?'disabled':''} onclick="finalScene()"><span class="icon">✧</span><strong>El Espejo del Corazón</strong><small>${s.gems.length<7?'Reúne las siete gemas':'Tu última misión →'}</small></button></div><footer class="row">${btn('Comprar corazón · 20 ◉','buy()')}${btn('Inicio','home()')}${btn('Reiniciar progreso','resetAsk()')}</footer>`}
+function buy(){if(s.coins<20||s.hearts>=5){modal('<p>Necesitas 20 monedas y tener menos de 5 corazones.</p>');return}s.coins-=20;s.hearts++;save();map()}
+function resetAsk(){modal('<h2>¿Empezar de nuevo?</h2><p>Se borrará la partida guardada en este navegador.</p>'+btn('Borrar progreso',"localStorage.removeItem(KEY);s=null;document.querySelector('dialog').close();home()"))}
+function achievements(){modal(`<h2>Tus logros</h2><p>✦ ${s.points} puntos · ${s.correct} respuestas acertadas</p>${s.gems.map(i=>`<p>◈ Guardián de ${worlds[i].virtue}</p>`).join('')||'<p>Aún no tienes gemas. Tu primer camino está abierto.</p>'}${s.commitment?`<p><strong>${esc(s.finalVirtue)}</strong><br>${esc(s.commitment)}</p>`:''}`)}
+function enter(i){level=i;stage=0;hp=300;used=false;shield=false;s.energy=100;if(s.hearts<=0)s.hearts=3;save();scene()}
+function scene(){const w=worlds[level];app.innerHTML=stats()+`<div class="eyebrow">Región ${level+1} / 7 · ${w.sin}</div><h2>${esc(regionContent(level).title)}</h2><div class="trail">${[0,1,2,3].map(i=>`<span class="${i<=stage?'lit':''}"></span>`).join('')}</div><div class="split"><section class="card">${regionImage(level,true)}<h3>Una gema espera tu ayuda</h3><p style="white-space:pre-line">${esc(regionContent(level).description)}</p><p class="muted">${stage===0?'La guía del reino te ofrece un mapa: escuchar, elegir y actuar. Cada encuentro enciende un faro hacia el jefe.':stage===1?'Un habitante necesita tu ayuda. Una decisión concreta abrirá el sendero.':'Los faros están encendidos. Abre el cofre y prepara tu encuentro con el jefe.'}</p></section><section class="card"><div class="eyebrow">Explora · Encuentro ${stage+1} de 3</div><h3>${['El sendero roto','La voz del pueblo','El cofre de luz'][stage]}</h3><p>${['Reconstruye el camino ordenando tres acciones.','Escucha una situación y decide cómo ayudar.','Recoge una ayuda y descubre la debilidad del jefe.'][stage]}</p>${btn(['Reconstruir el camino','Escuchar al habitante','Abrir el cofre'][stage],['order()','decision()','chest()'][stage],'primary')}</section></div><footer>${btn('Volver al mapa','map()')}</footer>`}
+function order(){chosen=[];renderOrder()}
+function moveStep(i,d){const j=i+d;if(j<0||j>=chosen.length)return;[chosen[i],chosen[j]]=[chosen[j],chosen[i]];renderOrder()}
+function renderOrder(){const w=regionContent(level);app.innerHTML=stats()+`<div class="narrow card" id="order-activity"><div class="eyebrow">Exploración · Reconstruye el sendero</div><h2>De la intención a la acción</h2><p>Selecciona los tres pasos. Puedes cambiar su posición con las flechas antes de comprobar.</p><div class="feedback">${chosen.map((n,i)=>`<div class="row" style="margin:12px 0"><span style="flex:1">${i+1}. ${esc(w.steps[n])}</span><button aria-label="Subir paso ${i+1}" ${i===0?'disabled':''} onclick="moveStep(${i},-1)">↑</button><button aria-label="Bajar paso ${i+1}" ${i===chosen.length-1?'disabled':''} onclick="moveStep(${i},1)">↓</button></div>`).join('')||'Tu camino comienza aquí…'}</div><div class="options">${[2,0,1].filter(n=>!chosen.includes(n)).map(n=>btn(esc(w.steps[n]),`chosen.push(${n});renderOrder()`)).join('')}</div><div class="row" style="margin-top:20px">${btn('Deshacer','chosen.pop();renderOrder()')}${btn('Empezar de nuevo','order()')}${chosen.length===3?btn('Comprobar camino','checkOrder()','primary'):''}</div><div id="feedback" role="status"></div></div>`}
+function completeOrder(){s.points+=15;save();stage=1;scene()}
+function checkOrder(){const c=regionContent(level);const valid=chosen.join('')===c.correctOrder.join('')||(!c.orderEdited&&level===0&&chosen.join('')==='102');if(valid){document.querySelector('#feedback').innerHTML=`<div class="feedback"><strong>¡Camino construido!</strong><p>${level===0&&!c.orderEdited?'Puedes reconocer un error antes o después de escuchar la corrección. Lo importante es escuchar con humildad y reparar para aprender.':'Has conectado la reflexión con una acción concreta.'}</p></div>${btn('Continuar al siguiente encuentro →','completeOrder()','primary')}`;document.querySelectorAll('button[onclick="checkOrder()"]').forEach(b=>b.disabled=true)}else{document.querySelector('#feedback').innerHTML=`<div class="feedback"><strong>Probemos este camino:</strong><ol>${c.correctOrder.map(n=>`<li>${esc(c.steps[n])}</li>`).join('')}</ol><p>Usa las flechas para ajustar tu respuesta o coloca este orden y compruébalo.</p></div>${btn('Colocar el orden sugerido','chosen=[...regionContent(level).correctOrder];renderOrder()')}`}}
+function decision(){question=bank[level][2+Math.floor(Math.random()*3)];action='decision';renderQuestion()}
+function chest(){s.potions=Math.min(3,s.potions+1);s.coins+=10;stage=3;save();app.innerHTML=stats()+`<div class="narrow card"><div class="portrait">◈</div><h2>Un pequeño impulso</h2><p>Has encontrado 10 monedas y un Corazón de Caridad. Puedes llevar hasta tres ayudas; cada una restaura un corazón.</p><p>La virtud que disipa a ${worlds[level].boss} es <strong>${worlds[level].virtue}</strong>.</p>${btn('Entrar al combate','battle()','primary')}</div>`}
+function battle(){save();if(s.hearts<=0){app.innerHTML=stats()+`<div class="narrow card"><h2>Respira. Puedes volver.</h2><p>Los errores forman parte del aprendizaje. Recuperarás tres corazones al reiniciar esta región.</p>${btn('Reintentar región','enter(level)','primary')}${btn('Mapa','map()')}</div>`;return}const w=worlds[level];app.innerHTML=stats()+`<div class="eyebrow">Combate simbólico · Región ${level+1}</div><h2>${w.boss}</h2><div class="split"><div class="card"><div class="portrait">${w.icon}</div><p style="text-align:center">«${w.quote}»</p><small>Resistencia de la sombra · ${hp}/300</small><div class="bar"><i style="width:${hp/3}%"></i></div><p class="muted">${w.virtue} revela otro camino. ${shield?'🛡️ Escudo preparado.':''}</p></div><div class="card"><h3>Elige tu movimiento</h3><p class="muted">Cada acción abre un reto. La virtud correcta hace más daño; defender permite recuperar energía.</p><div class="options">${btn('✦ Atacar · 10 energía / 100 daño',"ask('attack')")}${btn('◇ Usar virtud · 20 energía / 150 daño',"ask('virtue')")}${btn('♜ Defender · recupera 30 energía',"ask('defend')")}${btn('♡ Usar corazón · '+s.potions+' disponibles','heal()')}${s.hero===2&&!s.hope?btn('☀ Don de esperanza · +1 corazón','hope()'):''}</div><footer>${btn('Retirarse al mapa','map()')}</footer></div></div>`}
+function heal(){if(s.potions>0&&s.hearts<5){s.potions--;s.hearts++;battle()}else modal('<p>Necesitas una ayuda en tu inventario y tener menos de cinco corazones.</p>')}
+function hope(){if(s.hearts<5&&!s.hope){s.hope=true;s.hearts++;battle()}}
+function ask(a){let cost=a==='attack'?10:a==='virtue'?20:0;if(s.energy<cost){modal('<p>Defiende para recuperar energía antes de atacar.</p>');return}action=a;question=a==='virtue'?bank[level][7]:bank[level][5+Math.floor(Math.random()*2)];if(a==='defend')question=bank[level][8];s.energy-=cost;renderQuestion()}
+function renderQuestion(){const opts=question.options.map((o,i)=>({...o,id:i})).sort(()=>Math.random()-.5);app.innerHTML=stats()+`<div class="narrow card"><div class="eyebrow">${action==='decision'?'Decisión narrativa':action==='virtue'?'Carta de virtud':action==='defend'?'Defensa consciente':'Prueba de conocimiento'}</div><h2>${question.prompt}</h2><div class="options" id="answers">${opts.map(o=>`<button data-correct="${o.correct}" onclick="answer(${o.id})">${o.text}</button>`).join('')}</div>${s.hero===1&&!used?btn('✧ Usar sabiduría: descartar una opción','hint()'):''}<div id="feedback" role="status"></div></div>`}
+function hint(){const el=document.querySelector('#answers button[data-correct="false"]');if(el&&!used){el.disabled=true;el.textContent+=' · descartada';used=true}}
+function answer(i){document.querySelectorAll('#answers button').forEach(b=>b.disabled=true);let ok=question.options[i].correct;if(ok){s.points+=20+(s.hero===3&&action==='decision'?5:0);s.coins+=10;s.correct++;tone();if(action==='attack')hp-=100;if(action==='virtue')hp-=150;if(action==='defend'){shield=true;s.energy=Math.min(100,s.energy+30)}}else{if(shield){shield=false}else if(s.hero===0&&!used){used=true}else{s.hearts=Math.max(0,s.hearts-1)}if(action==='defend')s.energy=Math.min(100,s.energy+15)}save();let next=action==='decision'?(ok?'stage=2;scene()':'decision()'):hp<=0?'reward()':'battle()';if(s.hearts<=0)next='battle()';document.querySelector('#feedback').innerHTML=`<div class="feedback"><strong>${ok?'La luz se fortalece.':'Puedes repensarlo.'}</strong><p>${question.feedback}</p>${!ok?'<small>Una pausa y un nuevo intento también son parte del camino.</small>':''}</div>${btn('Continuar →',next,'primary')}`}
+function reward(){if(!s.gems.includes(level)){s.gems.push(level);s.gems.sort((a,b)=>a-b);s.points+=50}s.hearts=Math.min(5,s.hearts+1);s.energy=100;save();app.innerHTML=stats()+`<div class="narrow card"><div class="portrait" style="color:var(--gold)">◈</div><div class="eyebrow">Región restaurada</div><h2>Gema de ${worlds[level].virtue}</h2><p>La sombra de ${worlds[level].boss} se disipa. Has aprendido una forma concreta de practicar ${worlds[level].virtue.toLowerCase()}.</p><p class="feedback">Para reflexionar: ¿qué pequeño gesto de esta región podrías practicar hoy? No necesitas compartir tu respuesta.</p>${btn('Seguir explorando →','map()','primary')}</div>`}
+function finalScene(){app.innerHTML=stats()+`<form class="narrow card" onsubmit="finish(event)"><div class="eyebrow">El Espejo del Corazón</div><h2>La próxima decisión es tuya.</h2><p>Recuperaste las siete gemas. Elige una virtud y un paso concreto para seguir practicando. Esta reflexión no recibe calificación.</p><label>Quiero fortalecer<select id="virtue">${worlds.map(w=>`<option>${w.virtue}</option>`).join('')}</select></label><label>¿Dónde podría practicarla?<select id="context"><option>En el colegio</option><option>En casa</option><option>Con mis amistades</option><option>En redes sociales</option></select></label><label>Mi compromiso (sin datos personales)<textarea required maxlength="300" id="commitment" placeholder="Esta semana me propongo…">${esc(s.commitment||'')}</textarea></label><button class="primary" type="submit">Completar mi misión ✦</button></form>`}
+function finish(e){e.preventDefault();const c=document.querySelector('#commitment');if(!c.value.trim()){c.setCustomValidity('Escribe un compromiso concreto.');c.reportValidity();c.oninput=()=>c.setCustomValidity('');return}s.commitment=c.value.trim();s.finalVirtue=document.querySelector('#virtue').value;s.context=document.querySelector('#context').value;save();app.innerHTML=stats()+`<div class="narrow card"><div class="portrait">✧</div><div class="eyebrow">Misión completada</div><h2>Guardián de las siete virtudes</h2><p>La verdadera victoria está en aprender a elegir el bien cada día.</p><p class="feedback"><strong>${esc(s.finalVirtue)} · ${esc(s.context)}</strong><br>${esc(s.commitment)}</p><p>Conocer → discernir → elegir → practicar la virtud.</p><div class="row">${btn('Ver mis logros','achievements()','primary')}${btn('Regresar al mapa','map()')}${btn('Volver a jugar','create()')}</div></div>`}
+function q(prompt,good,bad,feedback){return{prompt,options:[{text:good,correct:true},{text:bad,correct:false}],feedback}}
+const bank=worlds.map(w=>[
+q('¿Qué actitud caracteriza a '+w.sin.toLowerCase()+'?',w.desc.split('.')[0]+'.','Reconocer la dignidad de los demás.',w.desc),
+q('¿Practicar '+w.virtue.toLowerCase()+' elimina para siempre las dificultades?','No: requiere decisiones y práctica.','Sí: basta aprender su nombre.','Las virtudes se fortalecen con actos concretos y nuevos intentos.'),
+...w.situations.map(x=>q(x[0],x[1],x[2],x[3])),
+q('¿Qué respuesta restaura el vínculo?',w.situations[1][1],w.situations[1][2],w.situations[1][3]),
+q('Reconoce la virtud en acción.',w.situations[2][1],w.situations[2][2],w.situations[2][3]),
+{prompt:'¿Qué virtud ayuda frente a '+w.sin.toLowerCase()+'?',options:worlds.map(v=>({text:v.virtue,correct:v===w})),feedback:w.desc},
+q('Vencer el mal con el bien implica…','Responder con una acción buena y poner límites si hace falta.','Devolver el daño para quedar a mano.','La propuesta de Romanos 12,21 invita a responder con el bien; no exige tolerar el abuso.'),
+q('Tu reto final: ¿cómo continuar?',w.steps[2],'Quedarme solo con la intención.',w.desc)
+]);
+const CUSTOM_KEY='guardianes-casillas-v1';
+const CUSTOM_BACKUP_KEY='guardianes-casillas-backup-v1';
+const CUSTOM_DRAFT_KEY='guardianes-casillas-borrador-v1';
+let custom={},draft={},editorIndex=0,imageBusy=false,autoSaveTimer=null;
+function sanitizeCustom(stored){const out={};if(stored&&typeof stored==='object'&&!Array.isArray(stored)){for(let i=0;i<7;i++){const item=stored[i];if(item&&typeof item==='object'){out[i]={};if(Array.isArray(item.steps)&&item.steps.length===3&&item.steps.every(t=>typeof t==='string'&&t.trim()))out[i].steps=item.steps;if(Array.isArray(item.correctOrder)&&item.correctOrder.length===3&&[...item.correctOrder].sort().join('')==='012')out[i].correctOrder=item.correctOrder;if(item.orderEdited===true)out[i].orderEdited=true;for(const key of ['title','text','description'])if(typeof item[key]==='string')out[i][key]=item[key];if(typeof item.image==='string'&&/^data:image\/(jpeg|png|webp);base64,/.test(item.image))out[i].image=item.image}}}return out}
+try{const stored=JSON.parse(localStorage.getItem(CUSTOM_KEY));custom=Object.keys(sanitizeCustom(stored)).length?sanitizeCustom(stored):sanitizeCustom(PORTABLE.custom)}catch{custom=sanitizeCustom(PORTABLE.custom)}
+function regionContent(i,source=custom){return{title:worlds[i].name,text:worlds[i].sin+' → '+worlds[i].virtue,description:worlds[i].desc,image:'',steps:[...worlds[i].steps],correctOrder:[0,1,2],orderEdited:false,...source[i]}}
+function regionImage(i,large=false){const c=regionContent(i);return c.image?`<img class="${large?'scene-image':'region-image'}" src="${esc(c.image)}" alt="${esc(c.title)}">`:`<${large?'div':'span'} class="${large?'portrait':'icon'}">${worlds[i].icon}</${large?'div':'span'}>`}
+function openEditor(){
+  clearTimeout(autoSaveTimer);
+  draft=JSON.parse(JSON.stringify(custom||{}));
+  editorIndex=0;
+  modal('<h2>Personalizar casillas</h2><p>Edita libremente las siete regiones. Los cambios se guardan automáticamente y también puedes pulsar <strong>Guardar cambios ahora</strong>.</p><div id="editor-fields"></div><div id="edit-status" role="status" aria-live="polite"></div><button id="save-custom" class="primary" onclick="saveCustom(true)">Guardar cambios ahora</button>');
+  renderEditor();
+}
+function collectEditor(){
+  const title=document.querySelector('#edit-title');
+  if(!title)return;
+  const prev=regionContent(editorIndex,draft);
+  const positions=[0,1,2].map(n=>Number(document.querySelector('#edit-position-'+n).value));
+  let correctOrder=[0,1,2];
+  if(new Set(positions).size===3&&positions.every(n=>n>=0&&n<=2)){
+    correctOrder=[0,1,2].map(position=>positions.indexOf(position));
+  }
+  draft[editorIndex]={
+    ...prev,
+    title:title.value,
+    text:document.querySelector('#edit-text').value,
+    description:document.querySelector('#edit-description').value,
+    steps:[0,1,2].map(n=>document.querySelector('#edit-step-'+n).value),
+    correctOrder,
+    orderEdited:prev.orderEdited||[0,1,2].some(n=>document.querySelector('#edit-step-'+n).value!==worlds[editorIndex].steps[n]||positions[n]!==n)
+  };
+}
+function persistDraft(){
+  try{collectEditor();localStorage.setItem(CUSTOM_DRAFT_KEY,JSON.stringify(draft));return true}catch{return false}
+}
+function scheduleAutosave(){
+  clearTimeout(autoSaveTimer);
+  const status=document.querySelector('#edit-status');
+  if(status)status.textContent='Guardando automáticamente…';
+  autoSaveTimer=setTimeout(()=>saveCustom(false),600);
+}
+function switchEditor(i){
+  clearTimeout(autoSaveTimer);
+  collectEditor();
+  persistDraft();
+  editorIndex=Number(i);
+  renderEditor();
+  const st=document.querySelector('#edit-status');if(st)st.textContent='Puedes seguir editando.';
+}
+function renderEditor(){
+  const host=document.querySelector('#editor-fields');if(!host)return;
+  const c=regionContent(editorIndex,draft);
+  host.innerHTML=`<label>Casilla que quieres modificar<select id="edit-region" onchange="switchEditor(this.value)">${worlds.map((w,i)=>`<option value="${i}" ${i===editorIndex?'selected':''}>${i+1}. ${w.sin}</option>`).join('')}</select></label><div class="editor-grid"><div><label>Título<input id="edit-title" maxlength="90" value="${esc(c.title)}"></label><label>Texto de la casilla<textarea id="edit-text" maxlength="220" rows="3">${esc(c.text)}</textarea></label><label>Texto de presentación de la región<textarea id="edit-description" maxlength="2000" rows="5">${esc(c.description)}</textarea></label></div><div><label>Imagen desde tu equipo<input id="edit-image" type="file" accept="image/png,image/jpeg,image/webp" onchange="uploadRegionImage(this.files[0])"></label><small>PNG, JPG o WebP · máximo 10 MB.</small><div style="margin:18px 0">${c.image?`<img class="editor-preview" src="${esc(c.image)}" alt="Vista previa de la casilla">`:'<p class="feedback">Sin imagen personalizada: se mostrará el símbolo original.</p>'}</div><div class="row"><button type="button" onclick="removeRegionImage()">Quitar imagen</button><button type="button" onclick="restoreRegion()">Restaurar esta casilla</button></div></div></div><section class="card" style="margin:20px 0"><h3>Actividad: ordenar las ideas</h3><p>Edita las tres alternativas y asigna una posición distinta a cada una.</p>${c.steps.map((t,n)=>`<div class="editor-grid"><label>Alternativa ${n+1}<textarea id="edit-step-${n}" maxlength="300" rows="2">${esc(t)}</textarea></label><label>Posición correcta<select id="edit-position-${n}">${[0,1,2].map(position=>`<option value="${position}" ${c.correctOrder.indexOf(n)===position?'selected':''}>${position+1}.º</option>`).join('')}</select></label></div>`).join('')}</section>`;
+  host.querySelectorAll('input:not([type=file]), textarea').forEach(el=>el.addEventListener('input',scheduleAutosave));
+  host.querySelectorAll('select:not(#edit-region)').forEach(el=>el.addEventListener('change',scheduleAutosave));
+}
+function removeRegionImage(){
+  if(imageBusy)return;collectEditor();
+  draft[editorIndex]={...regionContent(editorIndex,draft),image:''};
+  renderEditor();saveCustom(false);
+}
+function restoreRegion(){
+  if(imageBusy)return;delete draft[editorIndex];renderEditor();saveCustom(false);
+  const st=document.querySelector('#edit-status');if(st)st.textContent='✓ Casilla restaurada y guardada.';
+}
+async function uploadRegionImage(file){
+  if(!file)return;
+  const status=document.querySelector('#edit-status');
+  if(!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>10*1024*1024){if(status)status.textContent='Elige una imagen PNG, JPG o WebP de hasta 10 MB.';return}
+  collectEditor();const target=editorIndex;imageBusy=true;
+  const saveBtn=document.querySelector('#save-custom');const regionSel=document.querySelector('#edit-region');
+  if(saveBtn)saveBtn.disabled=true;if(regionSel)regionSel.disabled=true;if(status)status.textContent='Preparando imagen…';
+  let url;
+  try{
+    url=URL.createObjectURL(file);const img=new Image();img.src=url;await img.decode();
+    const scale=Math.min(1,800/img.width,800/img.height);const canvas=document.createElement('canvas');
+    canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));
+    const ctx=canvas.getContext('2d');ctx.fillStyle='#132139';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);
+    draft[target]={...regionContent(target,draft),image:canvas.toDataURL('image/jpeg',.8)};
+    renderEditor();saveCustom(false);const st=document.querySelector('#edit-status');if(st)st.textContent='✓ Imagen guardada.';
+  }catch{if(status)status.textContent='No se pudo leer la imagen. Prueba con otro archivo.'}
+  finally{if(url)URL.revokeObjectURL(url);imageBusy=false;const b=document.querySelector('#save-custom');const r=document.querySelector('#edit-region');if(b)b.disabled=false;if(r)r.disabled=false}
+}
+function saveCustom(manual=false){
+  if(imageBusy)return false;
+  collectEditor();
+  for(const key of Object.keys(draft)){
+    const item=regionContent(Number(key),draft);
+    if(!item.title.trim()){
+      const st=document.querySelector('#edit-status');if(st)st.textContent='Escribe un título para la región '+(Number(key)+1)+'.';persistDraft();return false;
+    }
+    if(!item.steps.every(t=>String(t).trim())||new Set(item.steps.map(t=>String(t).trim())).size!==3){
+      const st=document.querySelector('#edit-status');if(st)st.textContent='Región '+(Number(key)+1)+': las tres alternativas deben tener texto y ser diferentes.';persistDraft();return false;
+    }
+    if(!Array.isArray(item.correctOrder)||new Set(item.correctOrder).size!==3){
+      const st=document.querySelector('#edit-status');if(st)st.textContent='Región '+(Number(key)+1)+': usa 1.º, 2.º y 3.º una sola vez.';persistDraft();return false;
+    }
+  }
+  try{
+    const previous=localStorage.getItem(CUSTOM_KEY);if(previous)localStorage.setItem(CUSTOM_BACKUP_KEY,previous);
+    localStorage.setItem(CUSTOM_KEY,JSON.stringify(draft));localStorage.setItem(CUSTOM_DRAFT_KEY,JSON.stringify(draft));
+    custom=JSON.parse(JSON.stringify(draft));
+    const st=document.querySelector('#edit-status');if(st)st.textContent=manual?'✓ Cambios guardados correctamente.':'✓ Guardado automático';
+    return true;
+  }catch{
+    const st=document.querySelector('#edit-status');if(st)st.textContent='No se pudo guardar en este navegador. Puedes exportar una copia .json como respaldo.';return false;
+  }
+}
+window.addEventListener('beforeunload',()=>{if(document.querySelector('#edit-title')){try{collectEditor();localStorage.setItem(CUSTOM_DRAFT_KEY,JSON.stringify(draft));localStorage.setItem(CUSTOM_KEY,JSON.stringify(draft))}catch{}}});
+
+function chooseImport(){
+  const input=document.querySelector('#import-file');
+  if(input)input.click();
+}
+async function importCopy(file){
+  if(!file)return;
+  try{
+    if(!/\.json$/i.test(file.name)){modal('<h2>Archivo no compatible</h2><p>Selecciona una copia de Guardianes del Corazón en formato <strong>.json</strong>.</p>');return}
+    const text=await file.text();
+    let incoming;
+    try{incoming=JSON.parse(text)}catch{incoming=null}
+    if(!incoming||typeof incoming!=='object'||Array.isArray(incoming)){modal('<h2>No se pudo importar</h2><p>El archivo JSON no tiene un formato válido.</p>');return}
+    if(incoming.app&&incoming.app!=='guardianes-del-corazon'){modal('<h2>Archivo no compatible</h2><p>Este JSON no pertenece a Guardianes del Corazón.</p>');return}
+    const importedCustom=sanitizeCustom(incoming.custom);
+    const importedProgress=validProgress(incoming.progress);
+    const hasCustom=Object.keys(importedCustom).length>0;
+    if(!hasCustom&&!importedProgress){modal('<h2>Copia sin cambios</h2><p>El archivo es compatible, pero no contiene personalizaciones ni una partida guardada para importar.</p>');return}
+    window.__pendingImport={custom:importedCustom,progress:importedProgress,fileName:file.name};
+    modal(`<h2>Importar esta copia JSON</h2><p>Se encontró una copia válida: <strong>${esc(file.name)}</strong>.</p><p>Al importar, sus personalizaciones${importedProgress?' y su progreso de partida':''} reemplazarán los datos guardados actualmente en este navegador.</p><div class="row">${btn('Importar y continuar','applyImport()','primary')}${btn('Cancelar',"document.querySelector('#modal').close()")}</div>`);
+  }catch(e){modal('<h2>No se pudo importar</h2><p>No fue posible leer el archivo. Comprueba que sea un JSON exportado desde este juego.</p>')}
+}
+function applyImport(){
+  const incoming=window.__pendingImport;if(!incoming)return;
+  try{
+    const previous=localStorage.getItem(CUSTOM_KEY);if(previous)localStorage.setItem(CUSTOM_BACKUP_KEY,previous);
+    localStorage.setItem(CUSTOM_KEY,JSON.stringify(incoming.custom||{}));
+    localStorage.setItem(CUSTOM_DRAFT_KEY,JSON.stringify(incoming.custom||{}));
+    if(incoming.progress)localStorage.setItem(KEY,JSON.stringify(incoming.progress));else localStorage.removeItem(KEY);
+    custom=JSON.parse(JSON.stringify(incoming.custom||{}));
+    draft=JSON.parse(JSON.stringify(custom));
+    s=incoming.progress?JSON.parse(JSON.stringify(incoming.progress)):null;
+    window.__pendingImport=null;
+    document.querySelector('#modal').close();
+    home();
+    setTimeout(()=>modal(`<h2>✓ Copia JSON importada</h2><p>Las modificaciones${s?' y el progreso':''} ya están cargadas en esta computadora.</p><p>Puedes seguir editando y después usar <strong>Exportar copia (.json)</strong> para guardar el trabajo actualizado en tu USB.</p>`),50);
+  }catch(e){modal('<h2>No se pudo completar la importación</h2><p>El navegador no permitió guardar los datos importados. Comprueba que el almacenamiento local esté habilitado.</p>')}
+}
+
+function exportCopy(){
+  try{
+    if(document.querySelector('#edit-title')){persistDraft();saveCustom(false)}
+    const snapshot={
+      app:'guardianes-del-corazon',
+      version:1,
+      exportedAt:new Date().toISOString(),
+      custom:JSON.parse(JSON.stringify(custom||{})),
+      progress:s?JSON.parse(JSON.stringify(s)):null
+    };
+    const json=JSON.stringify(snapshot,null,2);
+    const blob=new Blob([json],{type:'application/json;charset=utf-8'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    const stamp=new Date().toISOString().replace(/[:.]/g,'-').slice(0,19);
+    a.href=url;a.download='guardianes-copia-'+stamp+'.json';
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+    modal('<h2>✓ Copia JSON creada</h2><p>Se descargó un archivo <strong>.json</strong> con tus modificaciones y el progreso de la partida.</p><p>Puedes guardarlo en un USB. En otra computadora abre este juego, pulsa <strong>📥 Importar copia (.json)</strong> y selecciona el archivo.</p><p><small>El archivo JSON contiene los datos del juego; para usarlo necesitas conservar también este archivo HTML.</small></p>');
+  }catch(e){modal('<h2>No se pudo exportar</h2><p>Prueba nuevamente. Si el navegador bloquea las descargas, autorízalas para esta página.</p>')}
+}
+
+home();
+</script></html>
+
